@@ -81,6 +81,24 @@
         <h2 style="color: var(--text-primary);">I am working, uWu</h2>
     </div>
 
+    <script>
+        // Get the destination URL from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const dest = urlParams.get('dest');
+
+        if (dest) {
+            // Wait for 1.5 seconds then redirect
+            setTimeout(() => {
+                window.location.href = dest;
+            }, 1500);
+        } else {
+            // Fallback if no destination
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1500);
+        }
+    </script>
+
 </body>
 
 </html>
