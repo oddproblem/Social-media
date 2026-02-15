@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - MySocial</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Specific enhancements for settings page */
+        .settings-header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 24px;
+            padding: 24px;
+            background: #1e293b;
+            /* Explicit dark slate */
+            color: #f1f5f9;
+            /* Use card-bg to match theme */
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .settings-header h3 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+
+        .settings-header p {
+            margin: 4px 0 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .settings-section-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin: 24px 0 8px 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .settings-item {
+            margin-bottom: 8px;
+            border: 1px solid var(--border);
+            /* Visible border */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            /* Visible border */
+            background: #1e293b;
+            /* Explicit dark slate */
+            color: #f1f5f9;
+            border-radius: 12px;
+            /* Smoother corners */
+            padding: 16px;
+            /* Better padding */
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .settings-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .settings-label {
+            flex: 1;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-primary);
+            /* Explicit light text */
+        }
+
+        .settings-arrow {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR (Mobile) -->
+    <div class="top-bar">
+        <a href="profile.html" style="text-decoration: none; font-size: 20px; color: var(--text-primary);"><i
+                class="fa-solid fa-arrow-left"></i></a>
+        <h2>Settings</h2>
+        <div style="width: 24px;"></div> <!-- Spacer -->
+    </div>
+
+    <div class="app-layout">
+        <!-- LEFT MENU -->
+        <aside class="left-menu">
+            <div class="left-profile">
+                <img src="assets/images/profilepic.png" alt="Profile">
+                <h4>Abir</h4>
+                <p>@abir_codes</p>
+
+                <div class="profile-stats">
+                    <div>
+                        <strong>248</strong>
+                        <span>Posts</span>
+                    </div>
+                    <div>
+                        <strong>1.2k</strong>
+                        <span>Followers</span>
+                    </div>
+                    <div>
+                        <strong>310</strong>
+                        <span>Following</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="left-nav">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="reels.html">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Reels</span>
+                </a>
+                <a href="messages.html">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="settings.html" class="active">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- CENTER FEED (Settings Content) -->
+        <main class="center-feed">
+            <div class="page" style="padding-top: 0; max-width: 600px; margin: 0 auto; width: 100%;">
+
+                <!-- Profile Summary Header -->
+                <div class="settings-header">
+                    <img src="assets/images/profilepic.png" alt="Profile">
+                    <h3>Abir</h3>
+                    <p>@abir_codes</p>
+                    <button class="btn-secondary"
+                        style="margin-top: 16px; padding: 6px 16px; font-size: 12px; border-radius: 20px;">Edit
+                        Profile</button>
+                </div>
+
+                <div class="settings-list">
+
+                    <a href="#" class="settings-item">
+                        <span class="settings-icon"
+                            style="background: rgba(59, 130, 246, 0.1); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-right: 12px;"><i
+                                class="fa-regular fa-user" style="font-size: 16px;"></i></span>
+                        <span class="settings-label">Account</span>
+                        <span class="settings-arrow"><i class="fa-solid fa-chevron-right"
+                                style="font-size: 12px;"></i></span>
+                    </a>
+
+                    <a href="#" class="settings-item">
+                        <span class="settings-icon"
+                            style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-right: 12px;"><i
+                                class="fa-regular fa-bell" style="font-size: 16px;"></i></span>
+                        <span class="settings-label">Notifications</span>
+                        <span class="settings-arrow"><i class="fa-solid fa-chevron-right"
+                                style="font-size: 12px;"></i></span>
+                    </a>
+
+                    <div style="margin-top: 24px;">
+                        <a href="login.html" class="settings-item"
+                            style="color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); justify-content: center; background: rgba(239, 68, 68, 0.05);">
+                            <span class="settings-label" style="flex: 0; margin-right: 8px; font-weight: 600;">Log
+                                Out</span>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-trending">
+            <div class="trending-section">
+                <h4>Trending</h4>
+                <ul class="trending-list">
+                    <li>#KurukshetraWar</li>
+                    <li>#Dharma</li>
+                    <li>#Hastinapur</li>
+                    <li>#GitaWisdom</li>
+                    <li>#ArcherySkills</li>
+                </ul>
+            </div>
+            <div class="suggested-section">
+                <h4>Suggested for you</h4>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=51">
+                    <span>Arjuna_Archer</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=52">
+                    <span>Karna_Surya</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=57">
+                    <span>Krishna_Vasudeva</span>
+                    <button>Follow</button>
+                </div>
+            </div>
+            <div class="right-footer">
+                <p>© 2026 MySocial</p>
+                <p>Privacy · Terms · Help</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <div class="bg-overlay"></div>
+
+</body>
+
+</html>

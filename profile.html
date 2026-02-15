@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abir (@abir_codes)</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR (Optional for profile quick actions) -->
+    <div class="top-bar">
+        <h2>Abir</h2>
+        <div style="display: flex; gap: 16px; align-items: center;">
+            <a href="index.html"
+                style="text-decoration: none; font-size: 14px; padding: 6px 16px; background: var(--accent); color: white; border-radius: 20px;">
+                <i class="fa-solid fa-arrow-left"></i> Home
+            </a>
+            <a href="settings.html" class="settings"><i class="fa-solid fa-gear"></i></a>
+        </div>
+    </div>
+
+    <div class="app-layout">
+        <!-- LEFT MENU (Consistent Sidebar) -->
+        <aside class="left-menu">
+            <div class="left-profile">
+                <!-- Using same image as profile page for consistency -->
+                <img src="assets/images/profilepic.png" alt="Profile">
+                <h4>Abir</h4>
+                <p>@abir_codes</p>
+
+                <div class="profile-stats">
+                    <div>
+                        <strong>248</strong>
+                        <span>Posts</span>
+                    </div>
+                    <div>
+                        <strong>1.2k</strong>
+                        <span>Followers</span>
+                    </div>
+                    <div>
+                        <strong>310</strong>
+                        <span>Following</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="left-nav">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="reels.html">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Reels</span>
+                </a>
+                <a href="messages.html">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="profile.html" class="active">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- CENTER FEED (Profile Content) -->
+        <main class="center-feed">
+            <div class="page" style="padding-top: 0; max-width: 800px; margin: 0 auto; width: 100%;">
+
+                <div class="profile-cover"></div>
+
+                <div class="profile-header-enhanced">
+                    <div class="profile-avatar-container">
+                        <img class="profile-avatar-enhanced" src="assets/images/profilepic.png">
+                    </div>
+                    <h3>Abir</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px;">@abir_codes</p>
+
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">248</span>
+                            <span class="stat-label">Posts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">1.2k</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">310</span>
+                            <span class="stat-label">Following</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-bio-box">
+                        <p>Age 21 | Coder 💻<br> ☕ Lives on coffee<br> ⚠️ Dangerous to himself<br> 💪 Everyday he
+                            challenges
+                            himself physically</p>
+                    </div>
+
+                    <div class="profile-actions">
+                        <a href="index.html" class="btn-secondary"
+                            style="background: var(--accent); color: white; border: none;"><i
+                                class="fa-solid fa-arrow-left"></i> Home</a>
+                        <a href="#" class="btn-primary" style="width: auto; padding: 10px 32px;">Edit Profile</a>
+                        <a href="messages.html" class="btn-secondary">Message</a>
+                    </div>
+                </div>
+
+                <div class="post-grid" style="padding-bottom: 60px;">
+                    <!-- Reuse images from assets -->
+                    <img src="assets/images/abir3.jpeg">
+                    <img src="assets/images/abir4.jpeg">
+                    <img src="assets/images/abir5.jpeg">
+                    <img src="https://picsum.photos/400/400?random=1">
+                    <img src="https://picsum.photos/400/400?random=2">
+                    <img src="https://picsum.photos/400/400?random=3">
+                    <img src="https://picsum.photos/400/400?random=4">
+                    <img src="https://picsum.photos/400/400?random=5">
+                    <img src="https://picsum.photos/400/400?random=6">
+                </div>
+
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR (Consistent Placeholder or Suggested) -->
+        <aside class="right-trending">
+            <div class="trending-section">
+                <h4>Trending</h4>
+                <ul class="trending-list">
+                    <li>#KurukshetraWar</li>
+                    <li>#Dharma</li>
+                    <li>#Hastinapur</li>
+                    <li>#GitaWisdom</li>
+                    <li>#ArcherySkills</li>
+                </ul>
+            </div>
+
+            <div class="suggested-section">
+                <h4>Suggested for you</h4>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=51">
+                    <span>Arjuna_Archer</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=52">
+                    <span>Karna_Surya</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=57">
+                    <span>Krishna_Vasudeva</span>
+                    <button>Follow</button>
+                </div>
+            </div>
+
+            <div class="right-footer">
+                <p>© 2026 MySocial</p>
+                <p>Privacy · Terms · Help</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Overlay for dark mode readability -->
+    <div class="bg-overlay"></div>
+
+    <!-- JS (Optional) -->
+    <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>

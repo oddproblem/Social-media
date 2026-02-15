@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reels</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="reels-page">
+
+  <!-- TOP BAR (Mobile Only) -->
+  <div class="top-bar"
+    style="position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between;">
+    <h2>Reels</h2>
+    <div style="width: 24px;"></div>
+  </div>
+
+  <div class="app-layout">
+    <!-- LEFT MENU (Desktop) -->
+    <aside class="left-menu">
+      <div class="left-profile">
+        <img src="assets/images/profilepic.png" alt="Profile">
+        <h4>Abir</h4>
+        <p>@abir_codes</p>
+        <div class="profile-stats">
+          <div><strong>248</strong><span>Posts</span></div>
+          <div><strong>1.2k</strong><span>Followers</span></div>
+          <div><strong>310</strong><span>Following</span></div>
+        </div>
+      </div>
+      <nav class="left-nav">
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Explore</span>
+        </a>
+        <a href="reels.html" class="active">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span>Reels</span>
+        </a>
+        <a href="messages.html">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Messages</span>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a href="settings.html">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- CENTER FEED (Reels) -->
+    <main class="center-feed" style="padding: 0; max-width: none; border: none; height: 100vh; overflow: hidden;">
+      <div class="reels-container"
+        style="margin-top: 0; padding-top: 52px; height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory;">
+
+        <!-- REEL 1 -->
+        <div class="reel">
+          <video src="assets/videos/reel1.mp4" muted loop playsinline></video>
+          <div class="reel-actions">
+            <button>❤️</button><span>12.3K</span>
+            <button>💬</button><span>230</span>
+          </div>
+        </div>
+
+        <!-- REEL 2 -->
+        <div class="reel">
+          <video src="assets/videos/reel2.mp4" muted loop playsinline></video>
+          <div class="reel-actions">
+            <button>❤️</button><span>8.9K</span>
+            <button>💬</button><span>140</span>
+          </div>
+        </div>
+
+        <!-- REEL 3 -->
+        <div class="reel">
+          <video src="assets/videos/reel3.mp4" muted loop playsinline></video>
+          <div class="reel-actions">
+            <button>❤️</button><span>20K</span>
+            <button>💬</button><span>510</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR (Hidden or Suggested) -->
+    <aside class="right-trending">
+      <div class="suggested-section">
+        <h4>Suggested for you</h4>
+        <div class="suggested-user">
+          <img src="https://i.pravatar.cc/100?img=51">
+          <span>Arjuna_Archer</span>
+          <button>Follow</button>
+        </div>
+        <div class="suggested-user">
+          <img src="https://i.pravatar.cc/100?img=52">
+          <span>Karna_Surya</span>
+          <button>Follow</button>
+        </div>
+        <div class="suggested-user">
+          <img src="https://i.pravatar.cc/100?img=57">
+          <span>Krishna_Vasudeva</span>
+          <button>Follow</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+
+  <script src="js/reels.js"></script>
+</body>
+
+</html>

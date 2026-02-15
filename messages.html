@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - MySocial</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR (Mobile) -->
+    <div class="top-bar">
+        <a href="index.html" style="text-decoration: none; font-size: 20px; color: var(--text-primary);"><i
+                class="fa-solid fa-arrow-left"></i></a>
+        <h2>Messages</h2>
+        <div style="width: 24px;"></div> <!-- Spacer -->
+    </div>
+
+    <div class="app-layout">
+        <!-- LEFT MENU -->
+        <aside class="left-menu">
+            <div class="left-profile">
+                <img src="assets/images/profilepic.png" alt="Profile">
+                <h4>Abir</h4>
+                <p>@abir_codes</p>
+
+                <div class="profile-stats">
+                    <div>
+                        <strong>248</strong>
+                        <span>Posts</span>
+                    </div>
+                    <div>
+                        <strong>1.2k</strong>
+                        <span>Followers</span>
+                    </div>
+                    <div>
+                        <strong>310</strong>
+                        <span>Following</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="left-nav">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="reels.html">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Reels</span>
+                </a>
+                <a href="messages.html" class="active">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- CENTER FEED (Messages List) -->
+        <main class="center-feed">
+            <div class="page" style="padding-top: 0; max-width: 600px; margin: 0 auto; width: 100%;">
+
+                <h2 style="margin-bottom: 20px; color: var(--text-primary);">Messages</h2>
+
+                <div class="messages-list" style="display: flex; flex-direction: column; gap: 4px;">
+
+                    <!-- CONVERSATION 1 -->
+                    <div class="message-item"
+                        style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; background: var(--card-bg); cursor: pointer; transition: background 0.2s;">
+                        <img src="https://i.pravatar.cc/100?img=11"
+                            style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; font-size: 16px; color: var(--text-primary);">Arjuna</h4>
+                            <p
+                                style="margin: 4px 0 0; font-size: 13px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">
+                                Practice at dawn tomorrow? 🏹</p>
+                        </div>
+                        <span style="font-size: 12px; color: var(--text-secondary);">2m</span>
+                    </div>
+
+                    <!-- CONVERSATION 2 -->
+                    <div class="message-item"
+                        style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; background: var(--card-bg); cursor: pointer; transition: background 0.2s;">
+                        <img src="https://i.pravatar.cc/100?img=5"
+                            style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; font-size: 16px; color: var(--text-primary); font-weight: 700;">Karna
+                            </h4>
+                            <p
+                                style="margin: 4px 0 0; font-size: 13px; color: var(--text-primary); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">
+                                I will prove myself on the field. 🔥</p>
+                        </div>
+                        <span style="font-size: 12px; color: var(--accent); font-weight: 700;">1h</span>
+                        <div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%;"></div>
+                    </div>
+
+                    <!-- CONVERSATION 3 -->
+                    <div class="message-item"
+                        style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; background: var(--card-bg); cursor: pointer; transition: background 0.2s;">
+                        <img src="https://i.pravatar.cc/100?img=8"
+                            style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; font-size: 16px; color: var(--text-primary);">Krishna</h4>
+                            <p
+                                style="margin: 4px 0 0; font-size: 13px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">
+                                Focus on your duty, not the result. 🪈</p>
+                        </div>
+                        <span style="font-size: 12px; color: var(--text-secondary);">3h</span>
+                    </div>
+
+                    <!-- CONVERSATION 4 -->
+                    <div class="message-item"
+                        style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; background: var(--card-bg); cursor: pointer; transition: background 0.2s;">
+                        <img src="https://i.pravatar.cc/100?img=60"
+                            style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; font-size: 16px; color: var(--text-primary);">Draupadi</h4>
+                            <p
+                                style="margin: 4px 0 0; font-size: 13px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">
+                                The assembly hall awaits.</p>
+                        </div>
+                        <span style="font-size: 12px; color: var(--text-secondary);">Yesterday</span>
+                    </div>
+
+                    <!-- CONVERSATION 5 -->
+                    <div class="message-item"
+                        style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 12px; background: var(--card-bg); cursor: pointer; transition: background 0.2s;">
+                        <img src="https://i.pravatar.cc/100?img=9"
+                            style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; font-size: 16px; color: var(--text-primary);">Bhishma</h4>
+                            <p
+                                style="margin: 4px 0 0; font-size: 13px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">
+                                My vow stands eternal.</p>
+                        </div>
+                        <span style="font-size: 12px; color: var(--text-secondary);">2d</span>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-trending">
+            <div class="trending-section">
+                <h4>Trending</h4>
+                <ul class="trending-list">
+                    <li>#KurukshetraWar</li>
+                    <li>#Dharma</li>
+                    <li>#Hastinapur</li>
+                    <li>#GitaWisdom</li>
+                    <li>#ArcherySkills</li>
+                </ul>
+            </div>
+            <div class="suggested-section">
+                <h4>Suggested for you</h4>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=51">
+                    <span>Arjuna_Archer</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=52">
+                    <span>Karna_Surya</span>
+                    <button>Follow</button>
+                </div>
+                <div class="suggested-user">
+                    <img src="https://i.pravatar.cc/100?img=57">
+                    <span>Krishna_Vasudeva</span>
+                    <button>Follow</button>
+                </div>
+            </div>
+            <div class="right-footer">
+                <p>© 2026 MySocial</p>
+                <p>Privacy · Terms · Help</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <div class="bg-overlay"></div>
+
+    <script>
+        // Simple hover effect for message items
+        document.querySelectorAll('.message-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.background = 'rgba(255, 255, 255, 0.05)';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.style.background = 'var(--card-bg)';
+            });
+            item.addEventListener('click', () => {
+                alert('Opening chat...'); // Placeholder
+            });
+        });
+    </script>
+
+</body>
+
+</html>

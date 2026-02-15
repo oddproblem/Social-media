@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - MySocial</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <!-- Reuse main styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .offline-container {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        .offline-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--app-bg);
+            margin-bottom: 24px;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 99, 235, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .retry-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .retry-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <div class="offline-container">
+        <img src="assets/images/profilepic2.jpeg" alt="Offline Avatar" class="offline-avatar">
+        <h2 style="color: var(--text-primary);">No Connection</h2>
+        <p>"Wait till I have a sip of code ☕"</p>
+
+        <button class="retry-btn" onclick="window.location.reload()">
+            <i class="fa-solid fa-rotate-right"></i> Try Again
+        </button>
+    </div>
+
+</body>
+
+</html>
